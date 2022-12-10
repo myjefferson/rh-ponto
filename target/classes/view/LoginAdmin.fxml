@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="600.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.MainPainelController">
+   <children>
+      <ImageView fitHeight="606.0" fitWidth="718.0" layoutY="-3.0" pickOnBounds="true">
+         <image>
+            <Image url="@../img/back_login_admin_teste.jpg" />
+         </image>
+      </ImageView>
+      <Button layoutX="777.0" layoutY="503.0" mnemonicParsing="false" onAction="#switchViewMainPonto" prefHeight="30.0" prefWidth="169.0" text="Voltar ao Painel Ponto">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <TextField fx:id="textFieldCPF" layoutX="759.0" layoutY="223.0" prefHeight="37.0" prefWidth="206.0" />
+      <Label layoutX="759.0" layoutY="198.0" text="CPF">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="759.0" layoutY="275.0" text="Senha">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Button layoutX="759.0" layoutY="368.0" mnemonicParsing="false" onAction="#loginAdmin" prefHeight="37.0" prefWidth="206.0" text="Entrar">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <PasswordField fx:id="textPassword" layoutX="759.0" layoutY="300.0" prefHeight="37.0" prefWidth="206.0" />
+      <Label layoutX="82.0" layoutY="70.0" text="Olá administrador(a)" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="saudacaoLabel" layoutX="81.0" layoutY="103.0" text="Saudações" textFill="WHITE">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="hourLabel" layoutX="790.0" layoutY="61.0" text="02:24:23" textFill="#217eff">
+         <font>
+            <Font name="System Bold" size="36.0" />
+         </font>
+      </Label>
+      <Label fx:id="dateLabel" layoutX="796.0" layoutY="102.0" text="00/00/0000">
+         <font>
+            <Font size="26.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
